@@ -62,7 +62,7 @@ $ grunt deploy
 
 * HTML5, CSS3, JavaScript
 * [Sublime Text 2](http://sublimetext.com/)
-* [SMACSS](http://smacss.com/)
+* [BEM](http://bem.info/)
 * [Sass](http://sass-lang.com/)
 * [Compass](http://compass-style.org/)
 * [Susy](http://susy.oddbird.net/)
