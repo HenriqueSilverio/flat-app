@@ -1,0 +1,43 @@
+/* modules/social
+--------------------------------------*/
+
+.social {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.social__item {
+		display: inline-block;
+		float: left;
+	}
+
+	.social__item + .social__item { margin-left: 20px; }
+
+		.social__link {
+			display: block;
+			width: 48px;
+			height: 45px;
+			@include hide-text;
+			
+			background-image: image-url('icons-social.png');
+			background-repeat: no-repeat;
+
+			&:hover { cursor: pointer; }
+		}
+
+		.social__link--twitter {
+			background-position: 0 0;
+		}
+
+		.social__link--facebook {
+			background-position: -67px 0;
+		}
+
+		.social__link--dribbble {
+			background-position: -136px 0;
+		}
+
+		.social__link--pinterest {
+			background-position: -202px 0;
+		}

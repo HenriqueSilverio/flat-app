@@ -1,0 +1,26 @@
+/* layout/price
+--------------------------------------*/
+
+.price {
+	padding: 60px 0;
+	background-color: #f6f6f7;
+}
+	
+	.price__container--full	{
+		margin-bottom: 40px;
+		@include container;
+	}
+
+		.price__txt {
+			font-size: 1em;
+			color: $smooking;
+		}
+
+	.price__container {
+		@include container(8);
+	}
+
+		.price__block {
+			@include span-columns(4, 12);
+			@include nth-omega(3n);
+		}

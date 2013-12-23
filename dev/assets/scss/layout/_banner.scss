@@ -1,0 +1,20 @@
+/* layout/banner
+--------------------------------------*/
+
+.banner {
+	padding-top: 58px;
+	@include container;
+}
+
+	.banner__img {
+		@include span-columns(5, 12);
+	}
+
+	.banner__txt {
+		padding-top: 128px;
+		color: $lightness;
+		@include span-columns(6 omega, 12);
+		@include post(1);
+
+		.h1 { color: $lightness; }
+	}

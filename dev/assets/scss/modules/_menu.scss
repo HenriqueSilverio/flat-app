@@ -1,0 +1,51 @@
+/* modules/menu
+--------------------------------------*/
+
+/**
+ * Markup snippet
+ *
+ *	<ul class="menu">
+ *		<li class="menu-item">
+ *			<a class="menu-item__link menu-item__link--is-active" href="#">Home</a>
+ *		</li>
+ *		<li class="menu-item">
+ *			<a class="menu-item__link" href="#">About</a>
+ *		</li>
+ *		<li class="menu-item">
+ *			<a class="menu-item__btn btn" href="#">Login</a>
+ *		</li>
+ *	</ul>
+ */
+
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.menu-item {
+		display: inline-block;
+		float: left;
+	}
+
+		.menu-item__link {
+			display: inline-block;
+			padding: 0 15px;
+			margin-top: 8px;
+			font-size: 1em;
+			color: $lightness;
+
+			&:hover {
+				color: $smooking;
+				text-decoration: none;
+			}
+		}
+
+			.menu-item__link--is-active {
+				color: $smooking;
+			}
+
+		.menu-item__btn {
+			margin-left: 10px;
+		}

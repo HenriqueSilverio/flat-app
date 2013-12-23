@@ -1,0 +1,15 @@
+/* layout/footer
+--------------------------------------*/
+
+.footer {
+	padding: 15px 0;
+	background-color: #171717;
+}
+
+	.footer__copy {
+		text-align: center;
+		color: $smooking;
+		margin-bottom: 0;
+
+		a { color: $positive; }
+	} 

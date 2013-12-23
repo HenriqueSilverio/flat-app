@@ -1,0 +1,38 @@
+/* base/fonts
+--------------------------------------*/
+
+@include font-face(
+	'Roboto', 
+	font-files(
+		'roboto/roboto-regular.woff',
+		'roboto/roboto-regular.ttf', 
+		'roboto/roboto-regular.svg'
+	), 
+	'roboto/roboto-regular.eot', 
+	'normal', 
+	'normal'
+);
+
+@include font-face(
+	'Roboto Medium', 
+	font-files(
+		'roboto-medium/roboto-medium.woff',
+		'roboto-medium/roboto-medium.ttf', 
+		'roboto-medium/roboto-medium.svg'
+	), 
+	'roboto-medium/roboto-medium.eot', 
+	'normal', 
+	'normal'
+);
+
+@include font-face(
+	'Roboto Light', 
+	font-files(
+		'roboto-light/roboto-light.woff',
+		'roboto-light/roboto-light.ttf', 
+		'roboto-light/roboto-light.svg'
+	), 
+	'roboto-light/roboto-light.eot', 
+	'normal', 
+	'normal'
+);

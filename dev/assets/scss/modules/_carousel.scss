@@ -1,0 +1,47 @@
+/* modules/carousel
+--------------------------------------*/
+
+.caraousel__header {
+	margin-bottom: 30px;
+}
+	.carousel__title,
+	.carousel__txt {
+		text-align: center;
+		color: $lightness;
+	}
+
+	.carousel__title {
+		margin-bottom: 15px;
+		font-size: 28px;
+	}
+
+	.carousel__txt {
+		font-size: 18px;
+		margin: 0;
+	}
+
+.carousel__img { 
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel__controls a {
+	font-size: 30px;
+	color: $lightness;
+
+	&:hover { 
+		cursor: pointer;
+		text-decoration: none; 
+	}
+}
+	
+	.prev,
+	.next { 
+		position: absolute; 
+		bottom: 180px;
+		z-index: 5;
+	}
+
+	.prev { left: 0; }
+
+	.next {	right: 0; }

@@ -1,0 +1,17 @@
+/* layout/about
+--------------------------------------*/
+
+.about {
+	padding: 90px 0 100px;
+	@include container;
+}
+	
+	.about__txt {
+		@include span-columns(7, 12);
+	}
+
+	.about__img {
+		padding-top: 20px;
+		text-align: center;
+		@include span-columns(5 omega, 12);
+	}

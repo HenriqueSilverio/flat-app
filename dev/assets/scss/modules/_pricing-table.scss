@@ -1,0 +1,118 @@
+/* modules/pricing-table.scss
+--------------------------------------*/
+
+/**
+ * Markup snippet:
+ *
+ *	<div class="pricing-table">
+ *		<div class="pricing-table__header">
+ *			<h4 class="pricing-table__title">Economy</h4>
+ *			<span class="pricing-table__price">5<small>$</small></span>
+ *		</div>
+ *		<ul class="pricing-table__list">
+ *			<li class="pricing-table__list__item">2GB</li>
+ *			<li class="pricing-table__list__item">200MB</li>
+ *			<li class="pricing-table__list__item">Unlimited</li>
+ *			<li class="pricing-table__list__item">1 Member</li>
+ *			<li class="pricing-table__list__item">1 e-Mail account</li>
+ *			<li class="pricing-table__list__item"><a class="btn">Sign Up</a></li>
+ *		</ul>
+ *	</div>
+ *
+ */
+
+
+/**
+ * Themes:
+ * 1. Default
+ * 2. Balanced
+ * 3. Positive
+ */
+
+
+/* 1. Default
+--------------------------------------*/
+
+.pricing-table,
+.pricing-table--balanced,
+.pricing-table--positive {
+	position: relative;
+	padding: 110px 0 15px;
+	color: $lightness;
+	text-align: center;
+	background-color: #f3aea8;
+}
+	
+	.pricing-table__header,
+	.pricing-table__header--balanced,
+	.pricing-table__header--positive {
+		position: absolute;
+		top: 0; left: 0; right: 0;
+		padding: 10px;
+		min-height: 72px;
+		background-color: $assertive;
+	}
+
+		.pricing-table__title {
+			margin: 0;
+			color: $lightness;
+			text-transform: uppercase;
+		}
+
+		.pricing-table__price,
+		.pricing-table__price--balanced,
+		.pricing-table__price--positive {
+			position: absolute;
+			bottom: -25px; left: 50%;
+			margin-left: -26px;
+			display: inline-block;
+			width: 52px;
+			height: 52px;
+			font: 24px/52px $font-medium;
+			border-radius: 50%;
+			background-color: #b95752;
+		}
+
+		.pricing-table__list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+			.pricing-table__list__item { font: .875em $font-light; }
+
+			.pricing-table__list__item + .pricing-table__list__item { margin-top: 10px; }
+
+			.pricing-table__list__item:nth-child(3n) { text-transform: uppercase; }
+
+
+/* 2. Balanced
+--------------------------------------*/
+
+.pricing-table--balanced {
+	background-color: #6cbfa1;
+
+	.pricing-table__header {
+		background-color: $balanced;
+	}
+
+		.pricing-table__price {
+			background-color: #166549;
+		}
+}
+
+
+/* 3. Positive
+--------------------------------------*/
+
+.pricing-table--positive {
+	background-color: #9bc9d4;
+
+	.pricing-table__header {
+		background-color: $positive;
+	}
+
+		.pricing-table__price {
+			background-color: #457b87;
+		}	
+}

@@ -1,0 +1,32 @@
+// base/helpers
+//------------------------------
+
+// Non-semantics and Placeholders
+//--------------------------------------------
+
+.no-gutter { margin: 0;	padding: 0; }
+
+.m-top-x { margin-top: 40px; }
+
+.p-left-x { display: inline-block; margin-top: 20px; }
+
+.txt-center { text-align: center; }
+
+.f-left { float: left; }
+
+.f-right { float: right; }
+
+.reverse {
+	color: $lightness;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

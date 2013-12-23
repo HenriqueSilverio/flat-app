@@ -1,0 +1,33 @@
+/* base/variables
+--------------------------------------*/
+
+/* Colors
+--------------------------------------*/
+
+$lightness: 		#fff;
+$darkness: 			#232323;
+$smooking: 			#999;
+$base-color:		#4a4848;
+$energized: 		#dda56c;
+$balanced: 			#1b7e5a;
+$assertive: 		#e76e66;
+$selection-bg: 		#cc4a79;
+$positive: 			#579aa9;
+$link-color: 		$selection-bg;
+
+
+/* Type
+--------------------------------------*/
+
+$font-regular: 	 Roboto, Helvetica, Arial, sans-serif;
+$font-medium: 	'Roboto Medium', Helvetica, Arial, sans-serif;
+$font-light: 	'Roboto Light', Helvetica, Arial, sans-serif;
+
+
+/* Susy settings
+--------------------------------------*/
+
+$total-columns: 12; 
+$column-width: 	60px;
+$gutter-width: 	20px;
+$grid-padding: 	10px;

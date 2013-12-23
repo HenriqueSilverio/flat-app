@@ -1,0 +1,20 @@
+/* layout/header
+--------------------------------------*/
+
+.header {
+	@include container;
+}
+
+	.header__logo {
+		@include span-columns(2, 12);
+		@include pad(1, 1);
+	}
+
+	.header__menu {
+		@include span-columns(8 omega, 12);
+
+		.menu {
+			float: right;
+			padding: 20px 0;
+		}
+	}

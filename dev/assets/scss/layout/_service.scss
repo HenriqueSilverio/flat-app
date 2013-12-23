@@ -1,0 +1,25 @@
+/* layout/service
+--------------------------------------*/
+
+.service {
+	background-color: #f6f6f7;
+}
+
+	.service__container {
+		padding: 65px 0;
+		@include container;
+	}
+
+		.service__block {
+			text-align: center;
+			@include span-columns(4, 12);
+			@include nth-omega(3n);
+		}
+
+		.service__title {
+			margin-bottom: 20px;
+		}
+
+		.service__txt {
+			margin: 0;
+		}

@@ -1,0 +1,21 @@
+/* modules/logo
+--------------------------------------*/
+
+/**
+ * Markup snippet:
+ *
+ *	<span class="logo">
+ *		<a href="#">Flat App</a>
+ *	</span>
+ */
+
+
+.logo {
+	display: inline-block;
+	margin: 20px 0;
+
+	a {
+		display: inline-block;
+		@include replace-text-with-dimensions('logo.png');
+	}
+}

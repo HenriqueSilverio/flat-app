@@ -1,0 +1,21 @@
+/* layout/contact
+--------------------------------------*/
+
+.contact {
+	padding: 60px;
+	background-color: #2e2e2e;
+}
+
+	.contact__block {
+		@include span-columns(6, 12);
+		@include nth-omega(2n);
+	}
+
+		.contact__icon {
+			display: inline-block;
+			color: $lightness;
+		}
+
+		.contact__icon + .contact__icon {
+			padding-left: 40px;
+		}

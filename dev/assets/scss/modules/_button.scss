@@ -1,0 +1,80 @@
+/* moudles/button
+--------------------------------------*/
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 1.071em 1.429em; // 10px 25px 20px
+	font-size: .875em; // 14px
+	line-height: .875em;
+	text-align: center;
+	text-transform: uppercase;
+	color: $lightness;
+	border: none;
+	background-color: $assertive;
+
+	@include user-select(none);
+
+	-webkit-transition: all .15s linear;
+	   -moz-transition: all .15s linear;
+	   	 -o-transition: all .15s linear;
+		    transition: all .15s linear;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+		background-color: darken($assertive, 5%);
+	}
+
+	&:active {
+		background-color: darken($assertive, 10%);
+	}
+}
+
+.btn--strong {
+	font: 1em $font-medium;
+}
+
+.btn--choice {
+	margin-right: 8px;
+
+	&:after {
+		content: 'or';
+		display: block;
+		position: absolute;
+		top: 10px; right: -23px;
+		z-index: 5;
+		width: 35px;
+		height: 35px;
+		font-size: 17px;
+		line-height: 33px;
+		font-style: italic;
+		color: $darkness;
+		border-radius: 50%;
+		background-color: $lightness;
+	}
+}
+
+.btn--energized {
+	background-color: $energized;
+
+	&:hover { background-color: darken($energized, 5%); }
+
+	&:active { background-color: darken($energized, 10%); }
+}
+
+.btn--positive {
+	background-color: $positive;
+
+	&:hover { background-color: darken($positive, 5%); }
+
+	&:active { background-color: darken($positive, 10%); }
+}
+
+.btn--balanced {
+	background-color: $balanced;
+
+	&:hover { background-color: darken($balanced, 5%); }
+
+	&:active { background-color: darken($balanced, 10%); }
+}

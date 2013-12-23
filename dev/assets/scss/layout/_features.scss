@@ -1,0 +1,12 @@
+/* layout/features
+--------------------------------------*/
+
+.features {
+	padding-top: 40px;
+	background-color: $energized;
+}
+
+	.features__container {
+		position: relative;
+		@include container;
+	}

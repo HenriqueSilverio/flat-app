@@ -1,0 +1,12 @@
+.DS_Store
+desktop.ini
+src/*.sublime-*
+src/.sass-cache/*
+src/node_modules/*
+src/bower_components/*
+src/.ftppass
+src/tmp/*
+dev/assets/css/*
+dist/*
+style/*
+todo.txt
